@@ -11,7 +11,8 @@ const server = http.createServer((requisicao, resposta) => {
   // com isso é feito a verificação para saber o que fazer
   if (requisicao.method === "GET") {
     
-    resposta.write("<h1>Caixa do mercado</h1>");
+    resposta.write(`<h1>Caixa do mercado</h1>
+    <h2> bah gurizes</h2>`);
   } else if (requisicao.method === "POST") {
     
     resposta.write("<h1>Adicionar em seu carrinho</h1>");
